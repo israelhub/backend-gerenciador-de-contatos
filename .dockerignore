@@ -138,14 +138,13 @@ jest-e2e.json
 eslint.config.mjs
 
 # TypeScript config files
-tsconfig.json
-tsconfig.build.json
+# tsconfig.json (needed for build)
+# tsconfig.build.json (needed for build)
 
 # NestJS CLI config
 nest-cli.json
 
 # Package manager files
-package-lock.json
 yarn.lock
 pnpm-lock.yaml
 
