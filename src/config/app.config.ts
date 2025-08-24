@@ -6,7 +6,12 @@ export default registerAs('app', () => ({
   corsOrigins:
     process.env.CORS_ORIGINS === '*'
       ? '*'
-      : process.env.CORS_ORIGINS?.split(',') || ['http://localhost:8000'],
+      : process.env.CORS_ORIGINS?.split(',') || [
+          'http://localhost:3000',
+          'http://127.0.0.1:3000',
+          'http://localhost:8000',
+          'http://127.0.0.1:8000',
+        ],
   throttleTtl: parseInt(process.env.THROTTLE_TTL || '60', 10),
   throttleLimit: parseInt(process.env.THROTTLE_LIMIT || '10', 10),
   enableSwagger:
